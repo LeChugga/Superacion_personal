@@ -79,13 +79,13 @@
                   </div>
                 </div>
 				
-                <div class="col-md-8">
                   <div class="detail-box">
+                <div class="col-md-8">
 
                     <h1>
-                      Personal<br>
+                      <br>
                       <span>
-                       Growth
+                       Personal Growth
                       </span>
 
                     </h1>
@@ -188,7 +188,7 @@
               <input type="text" maxlength="10" placeholder="Write your email">
               <div class="d-flex justify-content-center justify-content-end mt-3">
                 <button>
-                  Subscribe
+                  Subscribex
                 </button>
               </div>
             </form>
