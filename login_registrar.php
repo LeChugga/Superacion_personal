@@ -20,8 +20,10 @@ if(isset($_POST["btningresar"]))
 
 //Registro
 if(isset($_POST["btnregistrar"]))
-{
-	$sqlgrabar = "INSERT INTO login(usuario,password) values ('$nombre','$pass')";
+{  
+	$passHash = password_hash($pass, PASSWORD_BCRYPT);
+	$sqlgrabar = "INSERT INTO login(usuario,password) values ('$nombre','$passHash')";
+	
 	
 	if(mysqli_query($conn,$sqlgrabar)){
 		echo "<script> alert('User registered succesfully: $nombre'); window.location='index.html' </script>";
